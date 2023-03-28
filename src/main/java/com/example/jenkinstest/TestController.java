@@ -14,9 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("hello")
-    public ResponseEntity<String> read() {
+    public ResponseEntity<String> hello() {
         return ResponseEntity.status(HttpStatus.OK)
                 .body("Hello");
+    }
+
+    @GetMapping("bye")
+    public ResponseEntity<String> bye() {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body("bye");
     }
 
 }
