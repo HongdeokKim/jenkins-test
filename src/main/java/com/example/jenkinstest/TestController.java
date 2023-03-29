@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("test/")
 public class TestController {
 
-    @GetMapping("hello")
-    public ResponseEntity<String> hello() {
-        return ResponseEntity.status(HttpStatus.OK)
-                .body("Hello");
-    }
+//    @GetMapping("hello")
+//    public ResponseEntity<String> hello() {
+//        return ResponseEntity.status(HttpStatus.OK)
+//                .body("Hello");
+//    }
 
     @GetMapping("bye")
     public ResponseEntity<String> bye() {
