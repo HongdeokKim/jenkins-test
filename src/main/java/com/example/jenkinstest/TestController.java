@@ -25,4 +25,10 @@ public class TestController {
                 .body("bye");
     }
 
+    @GetMapping("wow")
+    public ResponseEntity<String> wow() {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body("wow");
+    }
+
 }
