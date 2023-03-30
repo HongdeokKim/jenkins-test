@@ -3,12 +3,6 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
-  datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-
   h2:
     console:
       enabled: true
@@ -28,5 +22,12 @@ springdoc:
   swagger-ui:
     path: /apidoc
 
-server:
-  port: 50000
+---
+spring:
+  profiles:
+    active: prod
+
+---
+spring:
+  profiles:
+    active: dev
